@@ -22,8 +22,8 @@ public class DBConnection {
     //JDBC Parts
     private static final String proto = "jdbc";
     private static final String vendor = ":mysql:";
-    private static final String ip = "//3.227.166.251/U04Ce1";
-    private static String pass = "53688198337";
+    private static final String ip = "//3.227.166.251/<dbname>";
+    private static String pass = "";
     
     
     //JDBC Final URL 
@@ -34,8 +34,8 @@ public class DBConnection {
     public static Connection conn = null;
     
     
-    private static final String username = "U04Ce1"; //Username for db
-    private static final String password = "53688198337"; //Pass for db
+    private static final String username = ""; //Username for db
+    private static final String password = ""; //Pass for db
     
     public static void startConnection(){
     
