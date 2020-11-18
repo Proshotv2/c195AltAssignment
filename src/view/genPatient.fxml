@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="435.0" prefWidth="473.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.GenPatientController">
+   <children>
+      <Label layoutX="94.0" layoutY="14.0" prefHeight="43.0" prefWidth="285.0" text="Create/Modify Patient">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <AnchorPane layoutX="68.0" layoutY="70.0" prefHeight="307.0" prefWidth="339.0">
+         <children>
+            <TextField fx:id="patName" layoutX="14.0" layoutY="21.0" prefHeight="32.0" prefWidth="285.0" promptText="Name" />
+            <TextField fx:id="ins" layoutX="14.0" layoutY="60.0" prefHeight="32.0" prefWidth="285.0" promptText="Insurance Provider" />
+            <TextField fx:id="addr" layoutX="14.0" layoutY="100.0" prefHeight="32.0" prefWidth="285.0" promptText="Address" />
+            <TextField fx:id="city" layoutX="14.0" layoutY="138.0" prefHeight="32.0" prefWidth="285.0" promptText="City" />
+            <TextField fx:id="state" layoutX="14.0" layoutY="182.0" prefHeight="32.0" prefWidth="145.0" promptText="State" />
+            <TextField fx:id="p_code" layoutX="170.0" layoutY="182.0" prefHeight="32.0" prefWidth="130.0" promptText="Postal Code" />
+            <TextField fx:id="phone" layoutX="14.0" layoutY="224.0" prefHeight="32.0" prefWidth="285.0" promptText="Phone (Best Contact Number..)" />
+            <Button layoutX="14.0" layoutY="274.0" mnemonicParsing="false" onAction="#handleSave" prefHeight="27.0" prefWidth="110.0" text="Save">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Button layoutX="189.0" layoutY="274.0" mnemonicParsing="false" onAction="#handleCancel" prefHeight="27.0" prefWidth="110.0" text="Cancel">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

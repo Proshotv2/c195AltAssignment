@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.ReportbyCountController">
+   <children>
+      <TableView fx:id="ReportTable" layoutX="149.0" layoutY="62.0" prefHeight="294.0" prefWidth="273.0">
+        <columns>
+          <TableColumn fx:id="typeField" prefWidth="154.0" text="Report Type" />
+          <TableColumn fx:id="countField" minWidth="0.0" prefWidth="119.0" text="Count" />
+        </columns>
+      </TableView>
+      <MenuBar layoutY="-3.0" prefHeight="25.0" prefWidth="600.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Close" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Edit">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Delete" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem mnemonicParsing="false" text="About" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <Label layoutX="108.0" layoutY="30.0" prefHeight="27.0" prefWidth="423.0" text="Report - Count of Appointments By Type (Year)">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Button layoutX="245.0" layoutY="362.0" mnemonicParsing="false" onAction="#CalScreen" prefHeight="34.0" prefWidth="81.0" text="Return" />
+   </children>
+</AnchorPane>

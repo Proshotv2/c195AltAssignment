@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="541.0" prefWidth="487.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.GenAppointmentController">
+   <children>
+      <Label layoutX="73.0" layoutY="14.0" prefHeight="43.0" prefWidth="342.0" text="Create/Modify Appointment">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <AnchorPane layoutX="70.0" layoutY="57.0" prefHeight="375.0" prefWidth="348.0">
+         <children>
+            <ComboBox fx:id="counselorCombo" layoutX="24.0" layoutY="14.0" prefHeight="29.0" prefWidth="296.0" promptText="Counselor" />
+            <ComboBox fx:id="patientCombo" layoutX="24.0" layoutY="55.0" prefHeight="29.0" prefWidth="296.0" promptText="Patient" />
+            <ComboBox fx:id="typeCombo" layoutX="24.0" layoutY="94.0" prefHeight="29.0" prefWidth="296.0" promptText="Appointment Type" />
+            <TextArea fx:id="noteTextarea" layoutX="24.0" layoutY="135.0" prefHeight="106.0" prefWidth="296.0" promptText="Notes.." />
+            <ComboBox fx:id="startCombo" layoutX="23.0" layoutY="254.0" prefHeight="39.0" prefWidth="101.0" promptText="Start Time" />
+            <DatePicker fx:id="dPick" layoutX="24.0" layoutY="310.0" prefHeight="39.0" prefWidth="296.0" promptText="Pick a Date!" />
+            <Label layoutX="135.0" layoutY="265.0" prefHeight="17.0" prefWidth="185.0" text="Note: All appointments are 1 hour." />
+            <Label layoutX="135.0" layoutY="285.0" prefHeight="17.0" prefWidth="185.0" text="Times listed for EST." />
+         </children>
+      </AnchorPane>
+      <Button layoutX="95.0" layoutY="455.0" mnemonicParsing="false" onAction="#handleSave" prefHeight="27.0" prefWidth="110.0" text="Save">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button layoutX="285.0" layoutY="455.0" mnemonicParsing="false" onAction="#handleCancel" prefHeight="27.0" prefWidth="110.0" text="Cancel">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

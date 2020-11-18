@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.LoginController">
+   <children>
+      <AnchorPane layoutX="17.0" layoutY="13.0" prefHeight="374.0" prefWidth="569.0">
+         <children>
+            <Button fx:id="loginbtn" layoutX="115.0" layoutY="237.0" mnemonicParsing="false" onAction="#LoginBtn" onKeyPressed="#LoginBtn" prefHeight="37.0" prefWidth="110.0" text="Login">
+               <font>
+                  <Font name="Georgia" size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="cancelbtn" layoutX="244.0" layoutY="237.0" mnemonicParsing="false" onAction="#handleCancel" prefHeight="37.0" prefWidth="110.0" text="Cancel">
+               <font>
+                  <Font name="Georgia" size="14.0" />
+               </font>
+            </Button>
+            <Label fx:id="errorLabel" layoutX="115.0" layoutY="342.0" prefHeight="23.0" prefWidth="321.0" />
+            <TextField fx:id="usernameField" layoutX="115.0" layoutY="76.0" prefHeight="37.0" prefWidth="206.0" />
+            <PasswordField fx:id="passwdField" layoutX="115.0" layoutY="132.0" prefHeight="37.0" prefWidth="206.0" />
+            <Label fx:id="usernameLabel" layoutX="14.0" layoutY="81.0" prefHeight="27.0" prefWidth="94.0" text="Username:">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="passwordLabel" layoutX="14.0" layoutY="137.0" prefHeight="27.0" prefWidth="94.0" text="Password:">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <PasswordField fx:id="pinField" layoutX="115.0" layoutY="182.0" prefHeight="37.0" prefWidth="110.0" />
+            <Label fx:id="pinLabel" layoutX="20.0" layoutY="187.0" prefHeight="27.0" prefWidth="77.0" text="Pin:">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="apploginlbl" layoutX="122.0" layoutY="8.0" prefHeight="37.0" prefWidth="354.0" text="Application Scheduler Login">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+            <Label fx:id="mainofficeLabel" layoutX="387.0" layoutY="95.0" prefHeight="37.0" prefWidth="168.0">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="currentofficeLabel" layoutX="299.0" layoutY="302.0" prefHeight="37.0" prefWidth="196.0">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="mainlbl" layoutX="382.0" layoutY="63.0" text="Main Office Time">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="currentlbl" layoutX="39.0" layoutY="307.0" text="Current Time:">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Button layoutX="484.0" layoutY="341.0" mnemonicParsing="false" onAction="#registerBtn" prefHeight="25.0" prefWidth="77.0" text="New User?" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

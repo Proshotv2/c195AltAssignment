@@ -1,0 +1,7 @@
+Huge thanks goes out to the following: 
+
+https://www.javaguides.net/2019/07/login-form-using-javafx-with-mysql-database.html
+
+https://stackoverflow.com/questions/19112357/java-simpledateformatyyyy-mm-ddthhmmssz-gives-timezone-as-ist
+
+

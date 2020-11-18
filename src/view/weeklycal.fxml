@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="661.0" prefWidth="987.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.WeeklycalController">
+   <children>
+      <Button layoutX="836.0" layoutY="69.0" mnemonicParsing="false" onAction="#CalScreen" prefHeight="34.0" prefWidth="91.0" text="Monthly">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button layoutX="669.0" layoutY="69.0" mnemonicParsing="false" onAction="#biweeklyCal" prefHeight="34.0" prefWidth="99.0" text="Bi-Weekly" />
+      <MenuBar fx:id="menuBtn" layoutY="2.0" prefHeight="25.0" prefWidth="991.0">
+         <menus>
+            <Menu mnemonicParsing="false" text="File">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#closeScreen" text="Close" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Reports">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#reportType" text="Report Appt by Year" />
+                  <MenuItem mnemonicParsing="false" onAction="#counselorReportType" text="Report Appt Total by Counselor" />
+                  <MenuItem mnemonicParsing="false" onAction="#stateReportType" text="Report Appt Total state" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Help">
+               <items>
+                  <MenuItem mnemonicParsing="false" text="About" />
+               </items>
+            </Menu>
+         </menus>
+      </MenuBar>
+      <Label fx:id="weeklyLabel" layoutX="368.0" layoutY="72.0" prefHeight="27.0" prefWidth="172.0" text="Weekly Calendar">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Button layoutX="55.0" layoutY="520.0" mnemonicParsing="false" onAction="#apptScreen" prefHeight="34.0" prefWidth="172.0" text="Insert Appointment" />
+      <Button layoutX="795.0" layoutY="604.0" mnemonicParsing="false" onAction="#patientScreen" prefHeight="34.0" prefWidth="172.0" text="Manage Patient" />
+      <TableView fx:id="weeklyTableview" layoutX="55.0" layoutY="120.0" prefHeight="388.0" prefWidth="912.0">
+         <columns>
+            <TableColumn fx:id="nameColumn" prefWidth="102.0" text="Name" />
+            <TableColumn fx:id="timeColumn" prefWidth="148.0" text="Start Time" />
+            <TableColumn fx:id="typeColumn" prefWidth="188.0" text="Type of Appointment" />
+            <TableColumn fx:id="noteColumn" prefWidth="473.0" text="Notes" />
+         </columns>
+      </TableView>
+      <Button layoutX="408.0" layoutY="520.0" mnemonicParsing="false" onAction="#editAppointment" prefHeight="34.0" prefWidth="172.0" text="Edit Appointment" />
+      <Button layoutX="795.0" layoutY="520.0" mnemonicParsing="false" onAction="#deleteappointment" prefHeight="34.0" prefWidth="172.0" text="Delete Appointment" />
+   </children>
+</AnchorPane>

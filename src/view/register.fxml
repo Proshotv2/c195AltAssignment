@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="344.0" prefWidth="507.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.RegisterController">
+   <children>
+      <Button layoutX="118.0" layoutY="232.0" mnemonicParsing="false" onAction="#handleSave" prefHeight="39.0" prefWidth="96.0" text="Save">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <TextField fx:id="rUsername" layoutX="226.0" layoutY="68.0" />
+      <Label layoutX="187.0" layoutY="14.0" prefHeight="40.0" prefWidth="133.0" text="REGISTER">
+         <font>
+            <Font name="Comic Sans MS" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="65.0" layoutY="68.0" prefHeight="25.0" prefWidth="149.0" text="Please Enter Username:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="65.0" layoutY="118.0" prefHeight="25.0" prefWidth="149.0" text="Please Enter Password:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="65.0" layoutY="165.0" prefHeight="25.0" prefWidth="149.0" text="Please Enter PIN:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <PasswordField fx:id="rPassword" layoutX="226.0" layoutY="118.0" />
+      <PasswordField fx:id="rPin" layoutX="226.0" layoutY="165.0" />
+      <Button layoutX="310.0" layoutY="232.0" mnemonicParsing="false" onAction="#handleCancel" prefHeight="39.0" prefWidth="96.0" text="Cancel">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
